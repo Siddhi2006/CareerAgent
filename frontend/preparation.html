@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAgent - Preparation</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            CareerAgent
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/chat">Chat</a>
+            <a href="/preparation">Preparation</a>
+        </nav>
+
+    </header>
+
+
+    <main class="preparation-page">
+
+        <section class="page-header">
+
+            <p class="page-label">
+                INTERVIEW PREPARATION
+            </p>
+
+            <h1>
+                Prepare for Your Role
+            </h1>
+
+            <p>
+                Generate a practical preparation plan based on
+                the requirements and responsibilities identified
+                from the uploaded job description.
+            </p>
+
+        </section>
+
+
+        <section class="preparation-container">
+
+            <div class="preparation-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>
+                            Your Preparation Plan
+                        </h2>
+
+                        <p class="card-description">
+                            CareerAgent will analyze the job
+                            description and organize the important
+                            preparation areas.
+                        </p>
+                    </div>
+
+                    <span id="preparationStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="preparationContent"
+                    class="preparation-content"
+                >
+
+                    <p class="loading-text">
+                        Click the button below to generate your
+                        preparation plan.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="generatePreparationButton"
+                    class="primary-button"
+                >
+                    Generate Preparation Plan
+                </button>
+
+            </div>
+
+
+            <div class="quick-links-card">
+
+                <h2>
+                    Continue Preparing
+                </h2>
+
+                <p>
+                    Use the other CareerAgent modules to continue
+                    preparing for the role.
+                </p>
+
+
+                <div class="quick-links">
+
+                    <a href="/analysis">
+                        <strong>JD Analysis</strong>
+                        <span>
+                            Review the job requirements and skills.
+                        </span>
+                    </a>
+
+
+                    <a href="/chat">
+                        <strong>Ask CareerAgent</strong>
+                        <span>
+                            Ask questions about the uploaded JD.
+                        </span>
+                    </a>
+
+
+                    <a href="/analysis">
+                        <strong>Interview Questions</strong>
+                        <span>
+                            Generate technical and HR questions.
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/static/js/preparation.js"></script>
+
+</body>
+
+</html>

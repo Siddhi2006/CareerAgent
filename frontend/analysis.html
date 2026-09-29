@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAgent - JD Analysis</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            CareerAgent
+        </div>
+
+        <nav>
+            <a href="/index">Home</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/chat">Chat</a>
+            <a href="/preparation">Preparation</a>
+        </nav>
+
+    </header>
+
+
+    <main class="analysis-page">
+
+        <section class="page-header">
+
+            <p class="page-label">
+                AI JOB ANALYSIS
+            </p>
+
+            <h1>
+                Job Description Analysis
+            </h1>
+
+            <p>
+                CareerAgent analyzes the uploaded job description
+                and extracts the important requirements for your
+                preparation.
+            </p>
+
+        </section>
+
+
+        <section class="analysis-container">
+
+
+            <div class="analysis-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Job Description Overview
+                    </h2>
+
+                    <span id="jdStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+                <div
+                    id="jdAnalysis"
+                    class="analysis-content"
+                >
+                    <p class="loading-text">
+                        Click "Analyze JD" to generate the analysis.
+                    </p>
+                </div>
+
+                <button
+                    id="analyzeJdButton"
+                    class="primary-button"
+                >
+                    Analyze JD
+                </button>
+
+            </div>
+
+
+            <div class="analysis-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Required Skills
+                    </h2>
+
+                    <span id="skillsStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+                <div
+                    id="skillsAnalysis"
+                    class="analysis-content"
+                >
+                    <p class="loading-text">
+                        Click "Analyze Skills" to identify the
+                        important skills from the job description.
+                    </p>
+                </div>
+
+                <button
+                    id="analyzeSkillsButton"
+                    class="primary-button"
+                >
+                    Analyze Skills
+                </button>
+
+            </div>
+
+
+            <div class="analysis-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Interview Questions
+                    </h2>
+
+                    <span id="interviewStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+                <div
+                    id="interviewQuestions"
+                    class="analysis-content"
+                >
+                    <p class="loading-text">
+                        Generate interview questions based on
+                        the uploaded job description.
+                    </p>
+                </div>
+
+                <button
+                    id="generateInterviewButton"
+                    class="primary-button"
+                >
+                    Generate Interview Questions
+                </button>
+
+            </div>
+
+
+            <div class="analysis-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Preparation Plan
+                    </h2>
+
+                    <span id="preparationStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+                <div
+                    id="preparationPlan"
+                    class="analysis-content"
+                >
+                    <p class="loading-text">
+                        Generate a preparation plan based on
+                        the requirements of the job description.
+                    </p>
+                </div>
+
+                <button
+                    id="generatePreparationButton"
+                    class="primary-button"
+                >
+                    Generate Preparation Plan
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="/static/js/analysis.js"></script>
+
+</body>
+
+</html>

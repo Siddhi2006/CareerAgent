@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAgent - Chat</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            CareerAgent
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/chat">Chat</a>
+            <a href="/preparation">Preparation</a>
+        </nav>
+
+    </header>
+
+
+    <main class="chat-page">
+
+        <section class="page-header">
+
+            <p class="page-label">
+                RAG ASSISTANT
+            </p>
+
+            <h1>
+                Ask CareerAgent
+            </h1>
+
+            <p>
+                Ask questions about the uploaded job description
+                and get answers using the relevant information
+                retrieved from the document.
+            </p>
+
+        </section>
+
+
+        <section class="chat-container">
+
+            <div
+                id="chatMessages"
+                class="chat-messages"
+            >
+
+                <div class="message assistant-message">
+
+                    <div class="message-label">
+                        CareerAgent
+                    </div>
+
+                    <div class="message-content">
+                        Your job description is ready.
+                        Ask me anything about the role,
+                        skills, responsibilities,
+                        qualifications, or requirements.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="chat-input-area">
+
+                <textarea
+                    id="questionInput"
+                    rows="3"
+                    placeholder="Ask a question about the job description..."
+                ></textarea>
+
+                <button
+                    id="sendQuestionButton"
+                    class="primary-button"
+                >
+                    Ask CareerAgent
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/static/js/chat.js"></script>
+
+</body>
+
+</html>

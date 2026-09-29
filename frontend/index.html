@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAgent</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">CareerAgent</div>
+
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+
+
+    <main class="hero">
+
+        <section class="hero-content">
+
+            <h1>
+                AI Job Preparation
+                <span>&</span>
+                Document Intelligence
+            </h1>
+
+            <p>
+                Upload a job description and let CareerAgent
+                analyze the requirements, identify important
+                skills, and help you prepare for interviews.
+            </p>
+
+            <div class="upload-card">
+
+                <h2>Upload Job Description</h2>
+
+                <p>
+                    Upload your job description in PDF format.
+                </p>
+
+                <input
+                    type="file"
+                    id="jdFile"
+                    accept=".pdf"
+                >
+
+                <button id="analyzeButton">
+                    Analyze JD
+                </button>
+
+                <p id="statusMessage"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
